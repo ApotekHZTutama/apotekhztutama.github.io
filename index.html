@@ -9,32 +9,40 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fff9;
+      background-color: #f6fff8;
       color: #333;
     }
+
+    /* ===== HEADER ===== */
     header {
-      background-color: #009e60;
+      background: linear-gradient(135deg, #009e60, #00c97a);
       color: white;
       text-align: center;
-      padding: 80px 20px;
-      background-image: url('IMG_6360-removebg-preview.png');
+      padding: 100px 20px;
+      background-image: url('logo-farmasi.png');
       background-repeat: no-repeat;
       background-position: center right;
-      background-size: 180px;
+      background-size: 150px;
+      position: relative;
     }
+
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 10px;
     }
+
     header p {
       margin: 5px 0;
       font-size: 1.1rem;
     }
+
+    /* ===== NAVBAR ===== */
     nav {
-      background-color: #e7f6ea;
+      background-color: #e9f9ee;
       text-align: center;
       padding: 12px 0;
     }
+
     nav a {
       color: #009e60;
       font-weight: bold;
@@ -42,37 +50,82 @@
       margin: 0 15px;
       transition: 0.2s;
     }
+
     nav a:hover {
       color: #006b42;
     }
+
+    /* ===== SECTION ===== */
     .section {
       padding: 50px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     .section h2 {
       color: #009e60;
       text-align: center;
       margin-bottom: 25px;
     }
+
+    .section h3 {
+      color: #006b42;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.05rem;
+    }
+
+    /* ===== BUTTONS ===== */
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       background-color: #009e60;
       color: white;
-      padding: 12px 25px;
-      text-decoration: none;
+      padding: 10px 20px;
       border-radius: 8px;
-      transition: 0.3s;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+      margin-left: 10px;
     }
+
     .btn:hover {
       background-color: #007a4a;
     }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    /* ===== FOOTER ===== */
     footer {
-      background-color: #e7f6ea;
+      background-color: #e9f9ee;
       text-align: center;
       padding: 25px;
       color: #333;
       font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      header {
+        background-position: bottom right;
+        background-size: 100px;
+        padding: 60px 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -81,43 +134,75 @@
   <header>
     <h1>Apotek HZT Utama</h1>
     <p><em>Your Trusted Pharmacy Expert</em></p>
-    <p>🕒 Buka setiap hari: 07:00 - 23:00</p>
-    <p>💬 Jam Konseling: 09:00 - 13:00</p>
+    <p>🕒 Buka setiap hari: 07:00 - 23:00 / <em>Open daily: 7 AM - 11 PM</em></p>
+    <p>💬 Jam Konseling: 09:00 - 13:00 / <em>Counseling Hours: 9 AM - 1 PM</em></p>
   </header>
 
   <nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#layanan">Layanan</a>
-    <a href="#kontak">Kontak</a>
+    <a href="#tentang">Tentang / About</a>
+    <a href="#layanan">Layanan / Services</a>
+    <a href="#kontak">Kontak / Contact</a>
   </nav>
 
   <section id="tentang" class="section">
-    <h2>Tentang Kami</h2>
+    <h2>Tentang Kami / About Us</h2>
     <p>
-      Apotek HZT Utama hadir sebagai mitra kesehatan Anda dengan layanan profesional dan ramah. 
-      Kami menyediakan obat-obatan lengkap, baik obat bebas maupun resep, serta memberikan pelayanan konsultasi dan informasi obat oleh apoteker berpengalaman.
+      Apotek HZT Utama hadir sebagai mitra kesehatan Anda dengan layanan profesional dan ramah.
+      Kami menyediakan obat-obatan lengkap, baik obat bebas maupun resep, serta memberikan pelayanan konsultasi oleh apoteker berpengalaman.
     </p>
+    <p><em>HZT Utama Pharmacy is your trusted health partner, offering professional and friendly services, complete medications, and consultation by licensed pharmacists.</em></p>
+
+    <h3>Apoteker Penanggung Jawab / Responsible Pharmacist</h3>
+    <p><strong>apt. Muhammad Adjie Ariayanto, S.Farm</strong></p>
+    <ul>
+      <li>S1: Universitas Wahid Hasyim</li>
+      <li>Profesi: Universitas Islam Sultan Agung</li>
+    </ul>
   </section>
 
   <section id="layanan" class="section">
-    <h2>Layanan Kami</h2>
+    <h2>Layanan Kami / Our Services</h2>
     <ul>
-      <li>💊 Penjualan obat resep & obat bebas</li>
-      <li>🧴 Suplemen & produk perawatan kesehatan</li>
-      <li>👩‍⚕️ Konseling & Pelayanan Informasi Obat</li>
-      <li>🚚 Layanan pemesanan & pengantaran</li>
+      <li>💊 Penjualan obat resep & obat bebas / Prescription & OTC drugs</li>
+      <li>🧴 Suplemen & produk perawatan kesehatan / Health & wellness products</li>
+      <li>👩‍⚕️ Konseling & Informasi Obat / Drug information & counseling</li>
+      <li>🚚 Layanan pemesanan & pengantaran / Home delivery service</li>
     </ul>
   </section>
 
   <section id="kontak" class="section">
-    <h2>Kontak Kami</h2>
-    <p>📍 <strong>Alamat:</strong> Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah</p>
-    <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/6282135791320" class="btn">Hubungi via WhatsApp</a></p>
-    <p>📧 <strong>Email:</strong> <a href="mailto:apotekmedika.bjb1@gmail.com" class="btn">Kirim Email</a></p>
+    <h2>Kontak Kami / Contact Us</h2>
+
+    <p>📍 <strong>Alamat / Address:</strong><br>
+      Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah
+    </p>
+
+    <h3>WhatsApp</h3>
+    <p>
+      📱 <strong>Apoteker:</strong> 082135791320
+      <a href="https://wa.me/6282135791320" class="btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">Hubungi Sekarang
+      </a>
+    </p>
+    <p>
+      📞 <strong>Apotek:</strong> 081519727150
+      <a href="https://wa.me/6281519727150" class="btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">Hubungi Sekarang
+      </a>
+    </p>
+
+    <h3>Email</h3>
+    <p>
+      📧 <strong>Email:</strong> adjim777@gmail.com
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adjim777@gmail.com" target="_blank" class="btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" alt="Email">Kirim Pesan
+      </a>
+    </p>
   </section>
 
   <footer>
-    &copy; 2025 Apotek HZT Utama. All rights reserved.
+    &copy; 2025 Apotek HZT Utama. All rights reserved. <br>
+    <em>Professional care for a healthier you.</em>
   </footer>
 
 </body>
