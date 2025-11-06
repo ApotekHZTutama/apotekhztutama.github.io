@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apotek HZT Utama</title>
+  <title>Apotek Hazati</title>
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f6fff8;
@@ -15,25 +15,46 @@
 
     /* ===== HEADER ===== */
     header {
+      position: relative;
       background: linear-gradient(135deg, #009e60, #00c97a);
       color: white;
       text-align: center;
-      padding: 100px 20px;
-      background-image: url('logo-farmasi.png');
+      padding: 120px 20px;
+      overflow: hidden;
+    }
+
+    /* Logo Farmasi Transparan di Tengah */
+    header::before {
+      content: "";
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Bowl_of_Hygieia_symbol_white.svg');
       background-repeat: no-repeat;
-      background-position: center right;
-      background-size: 150px;
-      position: relative;
+      background-position: center;
+      background-size: 180px;
+      opacity: 0.18;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      position: relative;
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 2px;
+      z-index: 1;
     }
 
     header p {
-      margin: 5px 0;
-      font-size: 1.1rem;
+      position: relative;
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-top: 10px;
+      font-weight: 400;
+      z-index: 1;
     }
 
     /* ===== NAVBAR ===== */
@@ -119,12 +140,13 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
       header {
-        background-position: bottom right;
-        background-size: 100px;
-        padding: 60px 20px;
+        padding: 80px 20px;
       }
       header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
       }
     }
   </style>
@@ -132,10 +154,8 @@
 <body>
 
   <header>
-    <h1>Apotek HZT Utama</h1>
-    <p><em>Your Trusted Pharmacy Expert</em></p>
-    <p>🕒 Buka setiap hari: 07:00 - 23:00 / <em>Open daily: 7 AM - 11 PM</em></p>
-    <p>💬 Jam Konseling: 09:00 - 13:00 / <em>Counseling Hours: 9 AM - 1 PM</em></p>
+    <h1>APOTEK HAZATI</h1>
+    <p>Your Trusted Pharmacy Expert</p>
   </header>
 
   <nav>
@@ -147,10 +167,10 @@
   <section id="tentang" class="section">
     <h2>Tentang Kami / About Us</h2>
     <p>
-      Apotek HZT Utama hadir sebagai mitra kesehatan Anda dengan layanan profesional dan ramah.
+      Apotek Hazati hadir sebagai mitra kesehatan Anda dengan layanan profesional dan ramah.
       Kami menyediakan obat-obatan lengkap, baik obat bebas maupun resep, serta memberikan pelayanan konsultasi oleh apoteker berpengalaman.
     </p>
-    <p><em>HZT Utama Pharmacy is your trusted health partner, offering professional and friendly services, complete medications, and consultation by licensed pharmacists.</em></p>
+    <p><em>Hazati Pharmacy is your trusted health partner, offering professional and friendly services, complete medications, and consultation by licensed pharmacists.</em></p>
 
     <h3>Apoteker Penanggung Jawab / Responsible Pharmacist</h3>
     <p><strong>apt. Muhammad Adjie Ariayanto, S.Farm</strong></p>
@@ -201,9 +221,10 @@
   </section>
 
   <footer>
-    &copy; 2025 Apotek HZT Utama. All rights reserved. <br>
+    &copy; 2025 Apotek Hazati. All rights reserved. <br>
     <em>Professional care for a healthier you.</em>
   </footer>
 
 </body>
 </html>
+
