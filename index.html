@@ -1,69 +1,124 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apotek HZ Utama</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f8fb;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2a9d8f;
-            color: white;
-            padding: 20px 0;
-        }
-        h1 {
-            margin: 0;
-        }
-        p {
-            font-size: 18px;
-        }
-        .container {
-            margin-top: 40px;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 25px;
-            background-color: #264653;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-        a:hover {
-            background-color: #1b2e35;
-        }
-        footer {
-            margin-top: 50px;
-            background-color: #e9ecef;
-            padding: 15px 0;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apotek HZT Utama</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fff9;
+      color: #333;
+    }
+    header {
+      background-color: #009e60;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      background-image: url('IMG_6360-removebg-preview.png');
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: 180px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #e7f6ea;
+      text-align: center;
+      padding: 12px 0;
+    }
+    nav a {
+      color: #009e60;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: 0.2s;
+    }
+    nav a:hover {
+      color: #006b42;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #009e60;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #009e60;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #007a4a;
+    }
+    footer {
+      background-color: #e7f6ea;
+      text-align: center;
+      padding: 25px;
+      color: #333;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Apotek HZ Utama</h1>
-        <p>Pelayanan Kefarmasian Profesional dan Terpercaya</p>
-    </header>
 
-    <div class="container">
-        <h2>Hubungi Kami</h2>
-        <a href="https://wa.me/6282135791320" target="_blank">💬 Chat WhatsApp</a>
-        <a href="mailto:apotekhztutama@gmail.com" target="_blank">📧 Kirim Email</a>
-        <p>📍 Lokasi: Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah</p>
-    </div>
+  <header>
+    <h1>Apotek HZT Utama</h1>
+    <p><em>Your Trusted Pharmacy Expert</em></p>
+    <p>🕒 Buka setiap hari: 07:00 - 23:00</p>
+    <p>💬 Jam Konseling: 09:00 - 13:00</p>
+  </header>
 
-    <footer>
-        <p>© 2025 Apotek HZ Utama. All rights reserved.</p>
-    </footer>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="tentang" class="section">
+    <h2>Tentang Kami</h2>
+    <p>
+      Apotek HZT Utama hadir sebagai mitra kesehatan Anda dengan layanan profesional dan ramah. 
+      Kami menyediakan obat-obatan lengkap, baik obat bebas maupun resep, serta memberikan pelayanan konsultasi dan informasi obat oleh apoteker berpengalaman.
+    </p>
+  </section>
+
+  <section id="layanan" class="section">
+    <h2>Layanan Kami</h2>
+    <ul>
+      <li>💊 Penjualan obat resep & obat bebas</li>
+      <li>🧴 Suplemen & produk perawatan kesehatan</li>
+      <li>👩‍⚕️ Konseling & Pelayanan Informasi Obat</li>
+      <li>🚚 Layanan pemesanan & pengantaran</li>
+    </ul>
+  </section>
+
+  <section id="kontak" class="section">
+    <h2>Kontak Kami</h2>
+    <p>📍 <strong>Alamat:</strong> Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah</p>
+    <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/6282135791320" class="btn">Hubungi via WhatsApp</a></p>
+    <p>📧 <strong>Email:</strong> <a href="mailto:apotekmedika.bjb1@gmail.com" class="btn">Kirim Email</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Apotek HZT Utama. All rights reserved.
+  </footer>
+
 </body>
 </html>
