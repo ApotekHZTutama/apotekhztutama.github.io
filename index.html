@@ -3,143 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apotek Hazati</title>
+  <title>Apotek MEDPLUS</title>
+
   <style>
     body {
-      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f6fff8;
-      color: #333;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f6fff9;
+      color: #2d2d2d;
       line-height: 1.7;
     }
 
-    /* ===== HEADER ===== */
+    /* ===== HERO ===== */
     header {
       position: relative;
-      background: linear-gradient(135deg, #009e60, #00c97a);
+      background: linear-gradient(135deg, #0aa36c, #1edc9f);
       color: white;
       text-align: center;
       padding: 140px 20px;
       overflow: hidden;
     }
 
-    /* Logo Farmasi Transparan di Tengah */
     header::before {
       content: "";
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Bowl_of_Hygieia.svg');
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Bowl_of_Hygieia.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 220px;
-      opacity: 0.15;
+      background-size: 260px;
+      opacity: 0.12;
       position: absolute;
       inset: 0;
-      z-index: 0;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo img {
+      width: 110px;
+      margin-bottom: 15px;
+      cursor: pointer;
     }
 
     header h1 {
       position: relative;
       font-size: 3.2rem;
-      font-weight: 700;
       margin: 0;
+      z-index: 2;
       letter-spacing: 2px;
-      z-index: 1;
     }
 
     header p {
       position: relative;
       font-size: 1.3rem;
-      font-style: italic;
       margin-top: 10px;
-      font-weight: 400;
-      z-index: 1;
+      font-style: italic;
+      z-index: 2;
     }
 
-    /* ===== NAVBAR ===== */
+    /* ===== NAV ===== */
     nav {
-      background-color: #e9f9ee;
+      background: #e7fff3;
+      padding: 12px;
       text-align: center;
-      padding: 12px 0;
     }
 
     nav a {
-      color: #009e60;
-      font-weight: bold;
       text-decoration: none;
+      color: #0aa36c;
       margin: 0 15px;
-      transition: 0.2s;
+      font-weight: 600;
     }
 
     nav a:hover {
-      color: #006b42;
+      color: #056b46;
     }
 
     /* ===== SECTION ===== */
     .section {
-      padding: 50px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      text-align: justify;
+      padding: 60px 20px;
     }
 
     .section h2 {
-      color: #009e60;
       text-align: center;
-      margin-bottom: 25px;
+      color: #0aa36c;
+      margin-bottom: 30px;
     }
 
-    .section h3 {
-      color: #006b42;
-      margin-top: 20px;
+    .section p {
+      text-align: justify;
     }
 
-    ul {
-      list-style-type: none;
+    /* ===== SERVICES ===== */
+    .services ul {
+      list-style: none;
       padding: 0;
     }
 
-    ul li {
-      margin: 8px 0;
+    .services li {
+      margin: 12px 0;
       font-size: 1.05rem;
     }
 
-    /* ===== BUTTONS ===== */
+    /* ===== BUTTON ===== */
     .btn {
       display: inline-flex;
       align-items: center;
-      background-color: #009e60;
+      background: #0aa36c;
       color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 500;
-      transition: background 0.3s;
-      margin-left: 10px;
+      margin: 10px 5px 0 0;
     }
 
     .btn:hover {
-      background-color: #007a4a;
+      background: #078b5c;
     }
 
     .btn img {
       width: 22px;
-      height: 22px;
       margin-right: 8px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact p {
+      margin: 15px 0;
     }
 
     /* ===== FOOTER ===== */
     footer {
-      background-color: #e9f9ee;
+      background: #e7fff3;
       text-align: center;
       padding: 25px;
-      color: #333;
       font-size: 0.9rem;
     }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 600px) {
       header {
-        padding: 80px 20px;
+        padding: 90px 20px;
       }
       header h1 {
         font-size: 2.2rem;
@@ -147,93 +154,101 @@
       header p {
         font-size: 1rem;
       }
-      .btn {
-        display: block;
-        margin: 10px auto;
-      }
     }
   </style>
 </head>
+
 <body>
 
+  <!-- HERO -->
   <header>
-    <h1>APOTEK HAZATI</h1>
-    <p>Your Trusted Pharmacy Expert</p>
+    <div class="logo">
+      <a href="#home">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Bowl_of_Hygieia.svg" alt="Logo MEDPLUS">
+      </a>
+    </div>
+    <h1>APOTEK MEDPLUS</h1>
+    <p>Your Trusted Pharmacy Partner</p>
   </header>
 
+  <!-- NAV -->
   <nav>
-    <a href="#tentang">Tentang / About</a>
-    <a href="#layanan">Layanan / Services</a>
-    <a href="#kontak">Kontak / Contact</a>
+    <a href="#about">Tentang</a>
+    <a href="#services">Layanan</a>
+    <a href="#contact">Kontak</a>
   </nav>
 
-  <section id="tentang" class="section">
-    <h2>Tentang Kami / About Us</h2>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>Tentang Kami</h2>
     <p>
-      Apotek Hazati hadir sebagai mitra kesehatan Anda dengan layanan profesional, ramah, dan terpercaya.
-      Kami menyediakan obat-obatan lengkap, baik obat bebas maupun resep dokter, serta memberikan pelayanan konsultasi oleh apoteker berpengalaman.
-    </p>
-    <p><em>Hazati Pharmacy is your trusted health partner, offering professional and friendly services, complete medications, and consultation by licensed pharmacists.</em></p>
-    <p>
-      Di Apotek Hazati, kami percaya bahwa setiap pasien berhak mendapatkan pelayanan penuh perhatian.
-      Karena itu, kami menghadirkan pelayanan farmasi yang tidak hanya menjual obat, tetapi juga mendampingi Anda mencapai kesehatan optimal.
-      Dengan produk asli dan terjamin, harga bersahabat, serta layanan cek kesehatan cepat mulai dari gula darah hingga kolesterol dan asam urat —
-      kami siap menjadi mitra kesehatan Anda setiap hari.
+      Apotek MEDPLUS hadir sebagai mitra kesehatan terpercaya dengan pelayanan profesional,
+      ramah, dan berorientasi pada keselamatan pasien. Kami menyediakan obat asli,
+      layanan konsultasi apoteker, serta berbagai kebutuhan kesehatan keluarga.
     </p>
 
-    <h3>Apoteker Penanggung Jawab / Responsible Pharmacist</h3>
-    <p><strong>apt. Muhammad Adjie Ariayanto, S.Farm</strong></p>
+    <p>
+      <strong>Apoteker Penanggung Jawab:</strong><br>
+      apt. Muhammad Adjie Ariyanto, S.Farm
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <h2>Layanan Kami</h2>
     <ul>
-      <li><strong>Riwayat Pendidikan:</strong></li>
-      <li>S1: Universitas Wahid Hasyim</li>
-      <li>Profesi Apoteker: Universitas Islam Sultan Agung</li>
+      <li>💊 Obat resep & obat bebas</li>
+      <li>🧴 Suplemen & alat kesehatan</li>
+      <li>👩‍⚕️ Konsultasi & informasi obat</li>
+      <li>🩺 Cek gula darah, kolesterol & asam urat</li>
+      <li>🚚 Layanan pesan & antar</li>
     </ul>
   </section>
 
-  <section id="layanan" class="section">
-    <h2>Layanan Kami / Our Services</h2>
-    <ul>
-      <li>💊 Penjualan obat resep & obat bebas / Prescription & OTC drugs</li>
-      <li>🧴 Suplemen & produk perawatan kesehatan / Health & wellness products</li>
-      <li>👩‍⚕️ Konseling & Informasi Obat / Drug information & counseling</li>
-      <li>🩺 Cek kesehatan (Gula darah, Kolesterol, Asam urat) / Health screening services</li>
-      <li>🚚 Layanan pemesanan & pengantaran / Home delivery service</li>
-    </ul>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Kontak Kami</h2>
+
+    <p>
+      📍 <strong>Alamat:</strong><br>
+      Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah <br>
+      <a class="btn" target="_blank"
+         href="https://www.google.com/maps/search/Desa+Kebonsari+Rowosari+Kendal">
+        📍 Lihat Lokasi
+      </a>
+    </p>
+
+    <p>
+      📱 <strong>WhatsApp Apoteker:</strong><br>
+      <a class="btn" target="_blank"
+         href="https://wa.me/6282135791320">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+        0821-3579-1320
+      </a>
+    </p>
+
+    <p>
+      📞 <strong>WhatsApp Apotek:</strong><br>
+      <a class="btn" target="_blank"
+         href="https://wa.me/6281519727150">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+        0815-1972-7150
+      </a>
+    </p>
+
+    <p>
+      📧 <strong>Email:</strong><br>
+      <a class="btn" target="_blank"
+         href="mailto:adjim777@gmail.com">
+        ✉️ adjim777@gmail.com
+      </a>
+    </p>
   </section>
 
-  <section id="kontak" class="section">
-    <h2>Kontak Kami / Contact Us</h2>
-
-    <p>📍 <strong>Alamat / Address:</strong><br>
-      Desa Kebonsari, Kecamatan Rowosari, Kabupaten Kendal, Jawa Tengah
-    </p>
-
-    <h3>WhatsApp</h3>
-    <p>
-      📱 <strong>Apoteker:</strong> 082135791320
-      <a href="https://wa.me/6282135791320" class="btn" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">Hubungi Sekarang
-      </a>
-    </p>
-    <p>
-      📞 <strong>Apotek:</strong> 081519727150
-      <a href="https://wa.me/6281519727150" class="btn" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">Hubungi Sekarang
-      </a>
-    </p>
-
-    <h3>Email</h3>
-    <p>
-      📧 <strong>Email:</strong> adjim777@gmail.com
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adjim777@gmail.com" target="_blank" class="btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">Kirim Pesan
-      </a>
-    </p>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    &copy; 2025 Apotek Hazati. All rights reserved. <br>
-    <em>Professional care for a healthier you.</em>
+    © 2025 Apotek MEDPLUS <br>
+    <em>Professional Care for a Healthier Life</em>
   </footer>
 
 </body>
